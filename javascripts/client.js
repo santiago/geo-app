@@ -38,7 +38,7 @@ function Service(opts) {
         deviceId:opts.userId,
         deviceKey:opts.userId,
         deviceSid:opts.userId,
-        url:url,
+        url:"http://173.230.141.159:8080",
         key:opts.userId,
         transportName:'socket'
     });
