@@ -1,0 +1,56 @@
+
+<html>
+<head>
+    <link rel="stylesheet" href="/stylesheets/css3.css" type="text/css"/>
+    <link rel="stylesheet" href="/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="http://openlayers.org/dev/theme/default/style.css" type="text/css"/>
+    <link rel="stylesheet" href="http://openlayers.org/dev/theme/default/google.css" type="text/css"/>
+    <link rel="stylesheet" href="/stylesheets/jquery.jgrowl.css" type="text/css"/>
+    <!-- script(src="http://maps.google.com/maps/api/js?sensor=false")-->
+    <script src="http://maps.google.com/maps/api/js?v=3.5&amp;sensor=false"></script>
+    <title>Geo</title>
+</head>
+<body>
+    <article id="main" style="display:none;">
+        <header style="float:right;">
+            <div id="actions">
+                <ul>
+                    <li>
+                        <a href="#" class="action draw">D | Draw region</a>
+                        <span style="display:none;" class="toggle-text">D | Stop drawing</span>
+                    </li>
+                    <li>
+                        <a href="#" class="action remove">X | Remove region</a>
+                        <span style="display:none;" class="toggle-text">X | Stop removing</span>
+                    </li>
+                </ul>
+                <div style="display:none;" class="help">
+                    <span style="display:none;" class="press-d">Press D to start or stop drawing a region</span>
+                    <span style="display:none;" class="press-x">Press X to start or stop removing regions</span>
+                </div>
+            </div>
+            <p>
+                <span>Welcome,&nbsp;</span>
+                <span class="user">&nbsp;</span>
+            </p>
+        </header>
+        <section>
+            <div id="map"></div>
+        </section>
+    </article>
+    <article style="display:none;" class="start">
+        <div id="loadUser">
+            <span style="display:none;" class="ajaxloader"></span>
+            <label>Enter your username</label>
+            <input type="text"/>
+            <button class="css3button">Go</button>
+        </div>
+    </article>
+    <script type="text/javascript" src="/javascripts/thirdparty/jquery/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="/javascripts/thirdparty/jquery.jgrowl_minimized.js"></script>
+    <script type="text/javascript" src="http://173.230.141.159:8080/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/javascripts/thirdparty/sencha-touch-all-debug.js"></script>
+    <script type="text/javascript" src="/javascripts/thirdparty/sencha-io-debug.js"></script>
+    <script type="text/javascript" src="/javascripts/thirdparty/OpenLayers.js"></script>
+    <script type="text/javascript" src="/javascripts/client.js"></script></body>
+</html>

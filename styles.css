@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
+}
+.ajaxloader {
+  width: 16px;
+  height: 16px;
+  background: url("/images/ajax-loader.gif") 0 0 no-repeat;
+}
+#map {
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+header {
+  background: #000;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+}
+header p {
+  padding-top: 6px;
+  text-align: right;
+  margin-right: 20px;
+}
+header #actions {
+  margin-top: 7px;
+  margin-left: 10px;
+  float: left;
+}
+header li {
+  float: left;
+  margin-right: 2px;
+}
+header li a {
+  color: #fff;
+  padding: 1px 8px;
+  border: 1px solid #fff;
+  font-size: 12px;
+  -moz-border-radius-topleft: 2px;
+  -webkit-border-top-left-radius: 2px;
+  -moz-border-radius-topright: 2px;
+  -webkit-border-top-right-radius: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  -moz-border-radius-bottomright: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+}
+header li a.on {
+  color: #000;
+  background: #fff;
+}
+.start {
+  height: 100%;
+  background: #efefef;
+}
+.start #loadUser {
+  background: #fff;
+  border: 2px solid #666;
+  padding: 20px;
+  width: 24%;
+  position: absolute;
+  top: 20%;
+  left: 38%;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+}
+.start #loadUser .ajaxloader {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.start #loadUser input {
+  display: block;
+  margin: 10px 0;
+  height: 30px;
+  font-size: 20px;
+  width: 300px;
+}
