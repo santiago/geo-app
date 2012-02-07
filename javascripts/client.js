@@ -23,7 +23,10 @@ function Service(opts) {
     
     var url= function() {
         if(location.hostname.match("senchafy")) {
-            return location.hostname;
+            return location.hostname.split(".")
+                                    .splice(1,2)
+                                    .unshift("msg")
+                                    .join('.');
         } else {
             return "http://"+location.hostname+":8080";
         }
