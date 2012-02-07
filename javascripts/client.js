@@ -21,6 +21,14 @@ var App;
 function Service(opts) {
     var self= this;
     
+    var url= function() {
+        if(location.hostname.match("senchafy")) {
+            return location.hostname;
+        } else {
+            return "http://"+location.hostname+":8080";
+        }
+    }();
+    
     Ext.io.setup({
         logLevel:'debug',
         appId:opts.userId,
@@ -28,7 +36,7 @@ function Service(opts) {
         deviceId:opts.userId,
         deviceKey:opts.userId,
         deviceSid:opts.userId,
-        url:"http://"+location.hostname+":8080",
+        url:url,
         key:opts.userId,
         transportName:'socket'
     });
